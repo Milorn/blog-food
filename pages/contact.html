@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Begin Navbar -->
+    <header class="py-5 border-b border-black">
+        <nav class="flex justify-between max-w-screen-lg mx-auto">
+            <h2 class="text-2xl font-semibold tracking-widest uppercase">Foody</h2>
+            <ul class="flex gap-10">
+                <li class="font-semibold tracking-wide underline"><a href="/">Home</a></li>
+                <li class="font-semibold tracking-wide underline"><a href="/blog">Blog</a></li>
+                <li class="font-semibold tracking-wide underline"><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+     <div  class="w-screen flex justify-center mt-20">
+
+         <form class="shadow-xl rounded-lg p-10 border flex flex-col gap-5 w-[500px]" action="/contact" method="post">
+             <h1 class="text-center font-semibold text-3xl">Contact Us</h1>
+             <input name="name" class="border px-4 py-1.5 border-black rounded-lg" type="text" placeholder="Name">
+             <input name="email" class="border px-4 py-1.5 border-black rounded-lg" type="text" placeholder="Email">
+             <textarea name="message" class="border px-4 py-1.5 border-black rounded-lg" placeholder="Message"></textarea>
+             <button class="bg-black text-white px-4 py-1.5 rounded-lg">Send</button>
+         </form>
+     </div>
+</body>
+
+</html>
